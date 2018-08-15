@@ -1,14 +1,16 @@
 import React from 'react';
 
-const ImageLinkForm = () => {
+const ImageLinkForm = ({ onInputChange, onButtonSubmit}) => {
 	return (
 		<div>
 		<p className ='f3'>
 			{'This will detect faces, bla bla bla...'}
 		</p>
 		<div>
-			<input type='text' />
-			<button>Detect</button>
+			<input type='text' 
+			onChange={onInputChange}/>
+
+			<button onClick={onButtonSubmit}>Detect</button>
 		</div>
 		</div>
 	);
